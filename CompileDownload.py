@@ -40,9 +40,9 @@ if __name__ == '__main__':
 	consoleText = printTextGui(30,120)
 	sys.stdout = consoleText
 	
-	src = ["main.lua"]
+	src = ["main.lua", "timer.lua", "mode.lua"]
 	target = "main"
-	machine="diancilu00001"
+	machine="dianfanbao00001"
 
 	try:
 		luacfile = target + ".luac"
