@@ -40,7 +40,7 @@ if __name__ == '__main__':
 	consoleText = printTextGui(30,120)
 	sys.stdout = consoleText
 	
-	src = ["main.lua"]
+	src = ["main.lua", "timer.lua", "setting.lua", "usercfg.lua"]
 	target = "main"
 	machine="diancilu00001"
 
