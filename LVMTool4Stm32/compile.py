@@ -47,12 +47,9 @@ class MediaCompile(object):
 
 	def compile(self, sources, binfile):
 		tmpfile = binfile + ".tmp"
-		try:
-			self.combineFiles(sources, tmpfile)
-			print("###compile --> %s" %(binfile))	
-		finally:
-			os.remove("luac.out")
-			
+		self.combineFiles(sources, tmpfile)
+		print("###compile --> %s" %(binfile))	
+		
 		self.runCMD("luac -s -o %s %s" %(binfile, tmpfile))
 		
 if __name__ == '__main__':
